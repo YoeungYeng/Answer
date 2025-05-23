@@ -16,7 +16,7 @@ function connect()
 // create a new record
 function insert()
 {
-    $conn = connect();
+    $conn = connect();  
     $insert = $conn->query("INSERT INTO student (name, sex, score) VALUES ('YOEUNG YENG', 'M', 100)");
     if ($insert) {
         echo "New record created successfully";
